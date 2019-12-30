@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="l-wrapper">
+    <header class="l-header">
+      <h1>サイト名</h1>
+    </header>
+    <div class="l-content">
+      <Ranking></Ranking>
+    </div>
+    <footer class="l-footer">
+      <p>© コピーライト</p>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+  import Ranking from './components/Ranking.vue'
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  components:{
+    Ranking
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.l-wrapper {
+  padding:0;
 }
 </style>
